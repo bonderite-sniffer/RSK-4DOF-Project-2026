@@ -1,0 +1,25 @@
+RS05 multi-motor test  2026-11-26 00:16:28
+duration 60.0 s / limit 60 s - end: time limit 60 s reached
+CSV: D:\College\Semester_7\Semprol\4DOF\Motor_Test\rs05_hal\python\canable\logs\multi_20261126_001528.csv
+
+motor        ID     mode  state  cyc    fb n  gap max gaps>50ms  iq pk A  iq rms tq pk Nm T max C VBUS min VBUS max tx err  faults
+----------------------------------------------------------------------------------------------------------------------------------
+J2            2      mit   done    1   11977     16ms         0     0.81    0.20     0.48    30.0    48.70    48.81      0  -
+
+J2: end-of-step error mean 1.48 max 2.92 deg over 2 steps
+
+VBUS (lowest of all motors): min 48.70 V over the test
+bus: error frames 0, rx errors 0, frames per ID {2: 60171}
+
+Read it as: gaps / tx errors / VBUS dips that grow with current point at cables or connectors;
+'undervoltage' faults = supply or wiring drop; one motor alone misbehaving = its own lead.
+
+Events:
+[J2] 00:12:02 MIT on: kp 2.0 kd 0.5 tff 0.0
+[J2] 00:13:02 stopped (mit)
+[J2] 00:13:11 MIT on: kp 2.0 kd 0.5 tff 0.0
+[J2] 00:14:11 stopped (mit)
+[J2] 00:14:20 MIT on: kp 0.5 kd 0.2 tff 0.0
+[J2] 00:15:20 stopped (mit)
+[J2] 00:15:28 MIT on: kp 0.5 kd 0.03 tff 0.0
+[J2] 00:16:28 stopped (mit)

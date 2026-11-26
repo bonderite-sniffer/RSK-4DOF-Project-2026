@@ -1,0 +1,31 @@
+RS05 multi-motor test  2026-11-25 23:38:50
+duration 60.0 s / limit 60 s - end: time limit 60 s reached
+CSV: D:\College\Semester_7\Semprol\4DOF\Motor_Test\rs05_hal\python\canable\logs\multi_20261125_233750.csv
+
+motor        ID     mode  state  cyc    fb n  gap max gaps>50ms  iq pk A  iq rms tq pk Nm T max C VBUS min VBUS max tx err  faults
+----------------------------------------------------------------------------------------------------------------------------------
+J1            1   pos-pp    off    9    6023     42ms         0     0.45    0.17     0.26    26.0    48.53    48.56      0  -
+J2            2   pos-pp    off    9    6022     42ms         0     0.24    0.07     0.15    26.0    48.74    48.84      0  -
+J3            3   pos-pp    off    9    6021     42ms         0     0.23    0.06     0.14    26.0    48.60    48.63      0  -
+J4            4   pos-pp    off    9    6023     42ms         0     0.87    0.24     0.71    27.0    47.51    47.55      0  -
+
+J1: end-of-step error mean 0.01 max 0.02 deg over 29 steps
+J2: end-of-step error mean 0.01 max 0.02 deg over 29 steps
+J3: end-of-step error mean 0.03 max 0.04 deg over 29 steps
+J4: end-of-step error mean 0.02 max 0.04 deg over 29 steps
+
+VBUS (lowest of all motors): min 47.51 V over the test
+bus: error frames 0, rx errors 0, frames per ID {1: 91532, 2: 91523, 3: 91515, 4: 91520}
+
+Read it as: gaps / tx errors / VBUS dips that grow with current point at cables or connectors;
+'undervoltage' faults = supply or wiring drop; one motor alone misbehaving = its own lead.
+
+Events:
+[J1] 23:37:50 position PP on, target +16.0 deg
+[J1] 23:38:50 stopped (pos)
+[J2] 23:37:50 position PP on, target +0.0 deg
+[J2] 23:38:50 stopped (pos)
+[J3] 23:37:50 position PP on, target +71.6 deg
+[J3] 23:38:50 stopped (pos)
+[J4] 23:37:50 position PP on, target +17.2 deg
+[J4] 23:38:50 stopped (pos)
